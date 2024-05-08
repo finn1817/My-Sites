@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Running Websites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('https://github.com/finn1817/image-links/blob/main/city.jpg?raw=true');
@@ -16,25 +17,61 @@
             height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center; }
+            justify-content: center;
+        }
         .container {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            width: 80%;
-            max-width: 600px; }
-        h1 { color: #333; }
-        a { background-color: #007BFF;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 { 
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        a { 
+            background-color: #007BFF;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 5px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px; }
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #4caf50; /* Same green as the first page */
+            color: white;
+            text-decoration: none;
+            border-radius: 0; /* No rounded corners for the top left position */
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .back-to-home:hover {
+            background-color: #45a049;
+            color: white; /* Keep the text color white even on hover */
+        }
     </style>
 </head>
 <body>
+    <!-- Back to Home link -->
+    <a href="https://finn1817.github.io/DanFinn/" class="back-to-home">Back to Home</a>
+
     <div class="container">
         <h1>Welcome to my running websites page</h1>
         <p>Here are some of my current website projects I have up:</p>
