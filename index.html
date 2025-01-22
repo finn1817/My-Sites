@@ -10,67 +10,69 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://github.com/finn1817/image-links/blob/main/city.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: url('https://github.com/finn1817/image-links/blob/main/city.jpg?raw=true') center/cover no-repeat;
             height: 100vh;
-            overflow-y: auto; /* Allow vertical scrolling */
+            overflow-y: auto;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .container {
             background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            width: 90%;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             max-width: 600px;
+            width: 90%;
+            max-height: 90%;
+            overflow-y: auto;
             text-align: center;
-            max-height: 90%; /* Ensure container does not exceed viewport height */
-            overflow-y: auto; /* Allow scrolling within the container */
         }
+
         h1 {
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
+
         p {
             color: #555;
             font-size: 16px;
             margin-bottom: 20px;
         }
+
         a {
-            background-color: #007BFF;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 5px;
-            text-decoration: none;
             display: inline-block;
-            margin: 5px 0;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
             transition: background-color 0.3s;
         }
+
         a:hover {
             background-color: #0056b3;
         }
+
         .back-to-home {
             position: fixed;
             top: 20px;
             left: 20px;
             padding: 10px 20px;
             background-color: #4caf50;
-            /* Same green as the first page */
             color: white;
             text-decoration: none;
-            border-radius: 0;
-            /* No rounded corners for the top left position */
             font-weight: bold;
+            border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
         }
+
         .back-to-home:hover {
             background-color: #45a049;
-            color: white;
-            /* Keep the text color white even on hover */
         }
     </style>
 </head>
@@ -78,18 +80,22 @@
     <!-- Back to Home link -->
     <a href="https://finn1817.github.io/DanFinn/" class="back-to-home">Back to Home</a>
     <div class="container">
-        <h1>Welcome to the page with my public websites!</h1>
-        <p>Here are some of my current website projects I have up:</p>
-        <a href="https://finn1817.github.io/My-Calculator/" target="_blank">My Calculator</a><br><br>
-        <a href="https://finn1817.github.io/LaxTimer/" target="_blank">My Lacrosse Timer (Computer Edition)</a><br><br>
-        <a href="https://finn1817.github.io/Lax-Timer-Phone-/" target="_blank">My Lacrosse Timer (Phone Edition)</a><br><br>
-        <a href="https://finn1817.github.io/Unit-Conversion/" target="_blank">Unit Conversion App</a><br><br>
-        <a href="https://finn1817.github.io/Resume-Builder/" target="_blank">Resume Builder</a><br><br>
-        <a href="https://finn1817.github.io/TikTakToeGame/" target="_blank">Tik-Tak-Toe Game</a><br><br>
-        <a href="https://finn1817.github.io/Snake-Game/" target="_blank">Snake Game</a><br><br>
-        <a href="https://finn1817.github.io/Future-Finance/" target="_blank">Finance Checker</a><br><br>
-        <a href="https://finn1817.github.io/Dans-Tetris/" target="_blank">Tetris</a><br><br>
-        <a href="https://finn1817.github.io/my-flappy-bird/" target="_blank">Flappy Bird</a><br><br>        
+        <h1>Welcome to My Public Websites!</h1>
+        <p>Here are some of my current projects:</p>
+            <!-- for school (all my own) -->
+        <a href="https://finn1817.github.io/My-Calculator/" target="_blank">My working Calculator</a>
+        <a href="https://finn1817.github.io/TikTakToeGame/" target="_blank">Tik-Tak-Toe Game</a>
+        <a href="https://finn1817.github.io/Unit-Conversion/" target="_blank">Unit Conversion Site</a>
+        <a href="https://finn1817.github.io/Future-Finance/" target="_blank">Finance Checker</a>
+        <a href="https://finn1817.github.io/Resume-Builder/" target="_blank">Resume Builder (simple generative response and placement)</a>
+        <!-- for dad -->
+        <a href="https://finn1817.github.io/LaxTimer/" target="_blank">Lacrosse Timer (pc)</a>
+        <a href="https://finn1817.github.io/Lax-Timer-Phone-/" target="_blank">Lacrosse Timer (mobile)</a>
+        
+        <!-- for fun (used online resources for help) -->
+        <a href="https://finn1817.github.io/Snake-Game/" target="_blank">Snake Game</a>
+        <a href="https://finn1817.github.io/Dans-Tetris/" target="_blank">Tetris (not finished)</a>
+        <a href="https://finn1817.github.io/my-flappy-bird/" target="_blank">Flappy Bird Remake</a>
     </div>
 </body>
 </html>
